@@ -56,7 +56,6 @@ local function readACC(REG)
 end
 
 function M.initDEF() --set default values
-	i2c.setup(0, sda, scl, i2c.SLOW)
 	write_reg(ACC,DRE,DEN)
 	write_reg(ACC,FSS,G16)
 end
